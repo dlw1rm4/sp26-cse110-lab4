@@ -46,21 +46,35 @@ console.log(student.courseLoad[0]);
 
 ## 13. Arithmetic
 ### a. '3' + 2
+32
 ### b. '3' - 2
+1
 ### c. 3 + null
+3
 ### d. '3' + null
+3null
 ### e. true + 3
+4
 ### f. false + null
+0
 ### g. '3' + undefined
+3undefined
 ### h. '3' - undefined
+NaN
 
 ## 14.
 ### a. '2' > 1
+true
 ### b.'2' < '12'
+false
 ### c. 2 == '2'
+true
 ### d. 2 === '2'
+false
 ### e. true == 2
+false
 ### f. true === Boolean(2)
+true
 
 ## 15. Explain the difference between the == and === operators.
 
