@@ -46,27 +46,27 @@ console.log(student.courseLoad[0]);
 
 ## 13. Arithmetic
 ### a. '3' + 2
-32
+The output is '32' (a string) because 3 is a string, and the expression converts the integer 2 to a string. Thus, it would result in '32'.
 ### b. '3' - 2
-1
+The output is 1 (an integer) because the minus sign converts the string 3 to an integer. Thus, it would result in 3 - 2 = 1.
 ### c. 3 + null
-3
+The output is 3 (an integer) because null as an integer is 0, so adding it to 3 would just result in 3.
 ### d. '3' + null
-3null
+The output is '3null' (a string) because 3 is a string, so null is converted to a string. Thus, it would result in '3null'.
 ### e. true + 3
-4
+The output is 4 (an integer) because true as an integer is 1, so 1 + 3 = 4.
 ### f. false + null
-0
+The output is 0 (an integer) because false as an integer is 0 and null as an integer is 0, so 0 + null = 0.
 ### g. '3' + undefined
-3undefined
+The output is '3undefined'because 3 is a string, so undefined is converted to a string, which is then concatenated with the string 3. Thus, it would result in '3undefined'.
 ### h. '3' - undefined
-NaN
+The output is NaN (not a number) because the minus sign can only be used for integers. Thus, it would result in NaN.
 
 ## 14.
 ### a. '2' > 1
-true
+The output is true because 2 is converted to an integer, which is greater than 1.
 ### b.'2' < '12'
-false
+The output is false because we compare two strings from the first element to the last. Since we compare '2' and '1' first, the ASCII value of '2' is larger than '1' so '2' is actually greater than '12'. Thus, it would result in false.
 ### c. 2 == '2'
 true
 ### d. 2 === '2'
@@ -77,6 +77,7 @@ false
 true
 
 ## 15. Explain the difference between the == and === operators.
+The difference between the two operators is that == converts the types of the values on each side to see if they are roughly equal, whereas === is strict and doesn't do type conversion.
 
 ## 16. Given the above Object, write a for...in loop that will iterate through it and print out the value of the property if the property starts with the letter r, or if the value of that property is an odd number.  (This should be in a JS file part2-question16.js)
 
@@ -85,3 +86,9 @@ true
 ## 18. The above program only prints out the time once when executed. Modify this code such that the program prints out the current time every second.  (This should be a JS file - part2-question18.js)
 
 ## 19. What is the output of the above code? (This should be in your part2.md)
+The output is:
+1
+4
+3
+2
+because the setTimeout makes it so it delays printing 3 and 2 after a specific amount of time.
