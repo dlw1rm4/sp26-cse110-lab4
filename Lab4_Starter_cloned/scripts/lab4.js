@@ -32,8 +32,10 @@ function discountPrices(prices, discount) {
         discountedPrice = prices[i] * (1 - discount);
         discounted.push(discountedPrice);
     }
-
-    return discounted;
+    if (discounted.length == 0) {
+        return discounted;
+    }
+    return false;
 }
 
 module.exports = {sumValues, discountPrices};
