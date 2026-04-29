@@ -62,19 +62,19 @@ The output is '3undefined'because 3 is a string, so undefined is converted to a 
 ### h. '3' - undefined
 The output is NaN (not a number) because the minus sign can only be used for integers. Thus, it would result in NaN.
 
-## 14.
+## 14. Comparison
 ### a. '2' > 1
 The output is true because 2 is converted to an integer, which is greater than 1.
 ### b.'2' < '12'
 The output is false because we compare two strings from the first element to the last. Since we compare '2' and '1' first, the ASCII value of '2' is larger than '1' so '2' is actually greater than '12'. Thus, it would result in false.
 ### c. 2 == '2'
-true
+The output is true becuase the string 2 is converted to an integer, and 2 is equal to 2. Thus, it would result in true.
 ### d. 2 === '2'
-false
+The output is false because === does not allow for any type conversion. Since we are comparing an integer and a string, they cannot be equal. Thus, it would result in false.
 ### e. true == 2
-false
+The output is false because true is converted to an integer: 1. 1 is not equal to 2, thus this result would be false.
 ### f. true === Boolean(2)
-true
+The output is true because we typecast 2 into a boolean, which is equal to true because it is a non-zero, non-empty value. Thus, it would result in true.
 
 ## 15. Explain the difference between the == and === operators.
 The difference between the two operators is that == converts the types of the values on each side to see if they are roughly equal, whereas === is strict and doesn't do type conversion.
